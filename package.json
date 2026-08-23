@@ -23,6 +23,7 @@
     "clsx": "^2.1.1",
     "globals": "^17.11.0",
     "husky": "^9.1.7",
+    "lucide-react": "^1.33.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "rimraf": "^6.1.3",
