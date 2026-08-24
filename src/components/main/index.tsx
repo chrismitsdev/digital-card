@@ -48,7 +48,7 @@ function Main() {
         locationHref='https://maps.app.goo.gl/qUaToewiDSyoCUm57'
       />
       <Business
-        imageSrc='/start-pilates.png'
+        imageSrc='/start-pilates.jpg'
         title='Start Pilates'
         description='Premium pilates equipment & accessories'
         websiteHref='https://www.startpilates.gr/'
