@@ -3,7 +3,7 @@ import {Intro} from './intro'
 
 function Main() {
   return (
-    <main className='space-y-6'>
+    <main className='space-y-4'>
       <Intro
         supertitle='My Businesses'
         heading='All my brands'
@@ -38,7 +38,7 @@ function Main() {
       />
       <Business
         imageSrc='/christmas-lighthouse.png'
-        title='The Christmas Lighthouse'
+        title='Christmas Lighthouse'
         description='Seasonal Christmas park & experience'
         websiteHref='https://www.thechristmaslighthouse.gr/'
         facebookHref='https://www.facebook.com/TheChristmasLighthouseAXD'
