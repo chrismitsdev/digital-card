@@ -16,7 +16,7 @@ function Iconlink({
     <a
       aria-label={ariaLabel}
       className={cn(
-        'size-10 inline-flex items-center justify-center rounded-full [&>svg]:size-5 sm:size-10 focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2',
+        'size-10 inline-flex items-center justify-center rounded-full [&>svg]:size-4 focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2',
         // Variant solid
         'data-[variant="solid"]:bg-primary',
         'data-[variant="solid"]:hover:bg-primary/80',

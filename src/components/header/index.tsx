@@ -11,11 +11,9 @@ function Header() {
       {/* Abstract */}
       <div className='flex items-center justify-between'>
         <div className='flex items-center gap-x-1 sm:gap-x-2'>
-          <Text variant='small'>People</Text>
+          <Text variant='small'>Hospitality</Text>
           <Text variant='small'>•</Text>
-          <Text variant='small'>Brands</Text>
-          <Text variant='small'>•</Text>
-          <Text variant='small'>Impact</Text>
+          <Text variant='small'>Wellness</Text>
         </div>
         <Text variant='small'>Alexandroupoli, Greece</Text>
       </div>

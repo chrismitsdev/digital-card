@@ -17,6 +17,7 @@ function Main() {
         facebookHref='https://www.facebook.com/profile.php?id=61566665200042'
         instagramHref='https://www.instagram.com/moccaliving.premiumstay/?hl=en'
         locationHref='https://maps.app.goo.gl/L6JEySni2t8jnb5m9'
+        stayHref='https://www.hotelo.gr/en/properties/mocca-living-41'
       />
       <Business
         imageSrc='/mocca-living.png'
@@ -26,6 +27,7 @@ function Main() {
         facebookHref='https://www.facebook.com/profile.php?id=61566665200042'
         instagramHref='https://www.instagram.com/moccaliving.premiumstay/?hl=en'
         locationHref='https://maps.app.goo.gl/pLsA8svYzYq5Z9GK9'
+        stayHref='https://www.hotelo.gr/en/properties/mocca-living-41'
       />
       <Business
         imageSrc='/yuppii.png'
@@ -38,7 +40,7 @@ function Main() {
       />
       <Business
         imageSrc='/christmas-lighthouse.png'
-        title='Christmas Lighthouse'
+        title='The Christmas Lighthouse'
         description='Seasonal Christmas park & experience'
         websiteHref='https://www.thechristmaslighthouse.gr/'
         facebookHref='https://www.facebook.com/TheChristmasLighthouseAXD'

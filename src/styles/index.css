@@ -2,6 +2,14 @@
 @import "./colors.css";
 @import "./fonts.css";
 
+.box {
+  mask:
+    radial-gradient(339.88px at 50% 456px, #000 99%, #0000 101%)
+    calc(50% - 304px) 0 / 608px 100%,
+    radial-gradient(339.88px at 50% -304px, #0000 99%, #000 101%) 50% 152px /
+    608px 100% repeat-x;
+}
+
 @layer base {
   body {
     @apply bg-background text-foreground;
