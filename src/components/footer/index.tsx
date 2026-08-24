@@ -16,7 +16,7 @@ function Footer() {
           <Text variant='small'>All our brands</Text>
           <Text variant='small'>Endless experiences</Text>
         </div>
-        <div className='inline-px bg-surface' />
+        <div className='inline-px bg-secondary/25' />
         <div className='space-y-1'>
           <Text variant='title'>Follow me</Text>
           <div className='space-x-2'>
