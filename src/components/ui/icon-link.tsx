@@ -1,11 +1,9 @@
 import {cn} from '@/src/lib/utils'
 
-type IconlinkProps = React.PropsWithChildren<{
+type IconlinkProps = React.ComponentPropsWithRef<'a'> & {
   'aria-label': string
-  className?: string
-  variant?: 'primary' | 'secondary'
-  href: string
-}>
+  variant?: 'primary' | 'soft'
+}
 
 function Iconlink({
   'aria-label': ariaLabel,
@@ -18,18 +16,17 @@ function Iconlink({
     <a
       aria-label={ariaLabel}
       className={cn(
-        'size-10 inline-flex items-center justify-center rounded-full',
-        [
-          'data-[variant="primary"]:bg-primary',
-          'data-[variant="primary"]:text-primary-foreground'
-        ],
+        'size-8 inline-flex items-center justify-center rounded-full [&>svg]:size-4 sm:size-10 sm:[&>svg]:size-5',
+        // Variant
+        'data-[variant="primary"]:bg-primary',
+        'data-[variant="primary"]:text-primary-foreground',
+        'data-[variant="soft"]:bg-secondary',
+        'data-[variant="soft"]:text-secondary-foreground',
         className
       )}
       href={href}
       {...props}
       data-variant={variant}
-      target='_blank'
-      rel='noopener'
     />
   )
 }

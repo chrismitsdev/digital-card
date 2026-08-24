@@ -1,14 +1,13 @@
 import {SiWhatsapp} from '@icons-pack/react-simple-icons'
-import {MailIcon, MapPinIcon, PhoneIcon, UserIcon} from 'lucide-react'
+import {MailIcon, PhoneIcon, UserIcon} from 'lucide-react'
 import {Link} from '@/src/components/ui/link'
 import {Text} from '@/src/components/ui/text'
-import {ProfileDetails} from './profile-details'
-import {ProfileInfo} from './profile-info'
-import {ProfilePicture} from './profile-picture'
+import {Avatar} from './avatar'
+import {Details} from './details'
 
 function Header() {
   return (
-    <header className='space-y-8'>
+    <header className='space-y-6'>
       {/* Abstract */}
       <div className='flex items-center justify-between'>
         <div className='flex items-center gap-x-1 sm:gap-x-2'>
@@ -22,26 +21,21 @@ function Header() {
       </div>
 
       {/* Information */}
-      <div className='flex gap-x-4'>
+      <div className='flex gap-x-3'>
         {/* Profile picture */}
-        <ProfilePicture
+        <Avatar
           className='object-[30%]'
-          src='/mokalis.jpg'
-          alt='Giorgos Mokalis'
+          imageSrc='/mokalis.jpg'
+          imageAlt='Giorgos Mokalis'
         />
         {/* Profile credentials */}
-        <div className='space-y-4 sm:space-y-10'>
-          <ProfileDetails
-            fullName='George Mokalis'
-            title='Founder & Owner'
-          />
-          {/* Profile contact details */}
-          <div className='space-y-2 sm:space-y-4'>
-            <ProfileInfo icon={PhoneIcon}>+30 697 343 3980</ProfileInfo>
-            <ProfileInfo icon={MailIcon}>mokalis@gmail.com</ProfileInfo>
-            <ProfileInfo icon={MapPinIcon}>Alexandroupoli, Greece</ProfileInfo>
-          </div>
-        </div>
+        <Details
+          fullName='George Mokalis'
+          title='Founder & Owner'
+          phone='+30 697 343 3980'
+          email='mokalis@gmail.com'
+          location='Alexandroupoli, Greecce'
+        />
       </div>
 
       {/* Links */}

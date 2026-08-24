@@ -23,28 +23,21 @@ export default function Text({
         'data-[type="display"]:font-display',
         'data-[type="script"]:font-script',
         // Variant
-        [
-          'data-[variant="heading"]:text-2xl',
-          'data-[variant="heading"]:font-semibold',
-          'data-[variant="heading"]:uppercase',
-          'data-[variant="heading"]:sm:text-5xl'
-        ],
-        [
-          'data-[variant="title"]:text-xl',
-          'data-[variant="title"]:sm:text-3xl'
-        ],
-        [
-          'data-[variant="paragraph"]:text-sm',
-          'data-[variant="paragraph"]:sm:text-base'
-        ],
-        [
-          'data-[variant="small"]:text-[10px]',
-          'data-[variant="small"]:uppercase',
-          'data-[variant="small"]:leading-4',
-          'data-[variant="small"]:tracking-wider',
-          'data-[variant="small"]:sm:tracking-widest',
-          'data-[variant="small"]:sm:text-xs'
-        ],
+        'data-[variant="heading"]:text-2xl',
+        'data-[variant="heading"]:font-semibold',
+        'data-[variant="heading"]:uppercase',
+        'data-[variant="heading"]:sm:text-5xl',
+        'data-[variant="title"]:uppercase',
+        'data-[variant="title"]:font-semibold',
+        'data-[variant="title"]:sm:text-lg',
+        'data-[variant="paragraph"]:text-sm',
+        'data-[variant="paragraph"]:sm:text-base',
+        'data-[variant="small"]:text-[10px]',
+        'data-[variant="small"]:uppercase',
+        'data-[variant="small"]:leading-4',
+        'data-[variant="small"]:tracking-wider',
+        'data-[variant="small"]:sm:tracking-widest',
+        'data-[variant="small"]:sm:text-xs',
         // Color
         'data-[color="primary"]:text-primary',
         'data-[color="accent"]:text-accent',

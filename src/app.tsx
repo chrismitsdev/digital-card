@@ -6,7 +6,7 @@ import {Main} from '@/src/components/main'
 export default function App() {
   return (
     <Container>
-      <div className='p-2 bg-surface rounded shadow sm:p-4'>
+      <div className='p-2 bg-surface rounded shadow space-y-10 sm:p-4'>
         <Header />
         <Main />
         <Footer />

@@ -1,14 +1,10 @@
 @theme {
   --color-background: #fff;
   --color-foreground: #110f0f;
-
   --color-surface: #f4f2ee;
-
   --color-primary: #203d3d;
   --color-primary-foreground: #f4f5f5;
-
   --color-secondary: #d1c1b3;
   --color-secondary-foreground: #110f0f;
-
   --color-accent: #7f5b3b;
 }
