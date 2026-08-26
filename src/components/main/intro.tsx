@@ -8,7 +8,7 @@ type IntroProps = {
 
 function Intro({supertitle, heading, subtitle}: IntroProps) {
   return (
-    <div className='text-center'>
+    <div className='pb-2 text-center'>
       <Text
         variant='small'
         color='accent'
@@ -21,6 +21,7 @@ function Intro({supertitle, heading, subtitle}: IntroProps) {
           className='whitespace-nowrap'
           variant='heading'
           type='display'
+          as='h2'
         >
           {heading}
         </Text>

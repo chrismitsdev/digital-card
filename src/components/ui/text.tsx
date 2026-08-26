@@ -2,51 +2,54 @@ import {cn} from '@/src/lib/utils'
 
 type TextProps = React.PropsWithChildren<{
   className?: string
+  'aria-hidden'?: boolean | 'true' | 'false'
   type?: 'sans' | 'display' | 'script'
   variant?: 'heading' | 'title' | 'paragraph' | 'small'
   color?: 'primary' | 'accent'
+  as?: 'h1' | 'h2' | 'h3' | 'p' | 'span' | 'small'
 }>
 
 export default function Text({
   className,
+  'aria-hidden': ariaHidden,
   type = 'sans',
   variant = 'paragraph',
   color,
+  as: Comp = 'span',
   ...props
 }: TextProps) {
   return (
-    <span
+    <Comp
+      aria-hidden={ariaHidden}
       className={cn(
         'block',
         // Type
-        'data-[type="sans"]:font-sans',
-        'data-[type="display"]:font-display',
-        'data-[type="script"]:font-script',
+        type === 'sans' && 'font-sans',
+        type === 'display' && 'font-display',
+        type === 'script' && 'font-script',
         // Variant
-        'data-[variant="heading"]:text-2xl',
-        'data-[variant="heading"]:font-semibold',
-        'data-[variant="heading"]:uppercase',
-        'data-[variant="heading"]:sm:text-5xl',
-        'data-[variant="title"]:uppercase',
-        'data-[variant="title"]:font-semibold',
-        'data-[variant="title"]:sm:text-lg',
-        'data-[variant="paragraph"]:text-sm',
-        'data-[variant="paragraph"]:sm:text-base',
-        'data-[variant="small"]:text-[10px]',
-        'data-[variant="small"]:uppercase',
-        'data-[variant="small"]:leading-4',
-        'data-[variant="small"]:tracking-wider',
-        'data-[variant="small"]:sm:tracking-widest',
-        'data-[variant="small"]:sm:text-xs',
+        variant === 'heading' && [
+          'text-2xl',
+          'font-semibold',
+          'uppercase',
+          'sm:text-5xl'
+        ],
+        variant === 'title' && ['uppercase', 'font-semibold', 'sm:text-lg'],
+        variant === 'paragraph' && ['text-sm', 'sm:text-base'],
+        variant === 'small' && [
+          'text-[10px]',
+          'uppercase',
+          'leading-4',
+          'tracking-wider',
+          'sm:tracking-widest',
+          'sm:text-xs'
+        ],
         // Color
-        'data-[color="primary"]:text-primary',
-        'data-[color="accent"]:text-accent',
+        color === 'primary' && 'text-primary',
+        color === 'accent' && 'text-accent',
         className
       )}
       {...props}
-      data-type={type}
-      data-variant={variant}
-      data-color={color}
     />
   )
 }

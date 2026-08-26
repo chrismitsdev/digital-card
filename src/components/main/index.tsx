@@ -16,7 +16,7 @@ function Main() {
         websiteHref='https://www.moccaliving.com/en/accommodation/mocca-sea/sea-dimitra'
         facebookHref='https://www.facebook.com/profile.php?id=61566665200042'
         instagramHref='https://www.instagram.com/moccaliving.premiumstay/?hl=en'
-        locationHref='https://maps.app.goo.gl/L6JEySni2t8jnb5m9'
+        locationHref='https://maps.app.goo.gl/3Ccjojo3LUXRwucu8'
         stayHref='https://www.hotelo.gr/en/properties/mocca-living-41'
       />
       <Business

@@ -11,11 +11,12 @@ type DetailsProps = {
 
 function Details({fullName, title, phone, email, location}: DetailsProps) {
   return (
-    <div className='space-y-2 sm:space-y-8'>
+    <div className='space-y-4 sm:space-y-8'>
       <div className='space-y-1 sm:space-y-2'>
         <Text
           variant='heading'
           type='display'
+          as='h1'
         >
           {fullName}
         </Text>
@@ -27,7 +28,7 @@ function Details({fullName, title, phone, email, location}: DetailsProps) {
         </Text>
       </div>
       {(phone || email || location) && (
-        <div className='space-y-2 sm:space-y-3'>
+        <div className='space-y-2 sm:space-y-4'>
           {phone && (
             <Info
               icon={PhoneIcon}

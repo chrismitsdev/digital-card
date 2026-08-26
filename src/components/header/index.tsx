@@ -12,7 +12,12 @@ function Header() {
       <div className='flex items-center justify-between'>
         <div className='flex items-center gap-x-1 sm:gap-x-2'>
           <Text variant='small'>Hospitality</Text>
-          <Text variant='small'>•</Text>
+          <Text
+            variant='small'
+            aria-hidden='true'
+          >
+            •
+          </Text>
           <Text variant='small'>Wellness</Text>
         </div>
         <Text variant='small'>Alexandroupoli, Greece</Text>
@@ -32,32 +37,43 @@ function Header() {
           title='Founder & Owner'
           phone='+30 697 343 3980'
           email='mokalis@gmail.com'
-          location='Alexandroupoli, Greecce'
+          location='Alexandroupoli, Greece'
         />
       </div>
 
       {/* Links */}
-      <div className='grid grid-cols-2 gap-2 sm:grid-cols-4'>
-        <Link href='tel:+306973433980'>
-          <PhoneIcon />
-          <span>Call me</span>
-        </Link>
-        <Link href='mailto:mokalis@gmail.com'>
-          <MailIcon />
-          <span>Email me</span>
-        </Link>
-        <Link href='https://wa.me/306973433980'>
-          <SiWhatsapp />
-          <span>WhatsApp</span>
-        </Link>
-        <Link
-          href='/contact.vcf'
-          download
-        >
-          <UserIcon />
-          <span>Save contact</span>
-        </Link>
-      </div>
+      <ul className='grid grid-cols-2 gap-2 sm:grid-cols-4'>
+        <li>
+          <Link href='tel:+306973433980'>
+            <PhoneIcon />
+            <span>Call me</span>
+          </Link>
+        </li>
+        <li>
+          <Link href='mailto:mokalis@gmail.com'>
+            <MailIcon />
+            <span>Email me</span>
+          </Link>
+        </li>
+        <li>
+          <Link
+            href='https://wa.me/306973433980'
+            target='_blank'
+          >
+            <SiWhatsapp />
+            <span>WhatsApp</span>
+          </Link>
+        </li>
+        <li>
+          <Link
+            href='/contact.vcf'
+            download='contact.vcf'
+          >
+            <UserIcon />
+            <span>Save contact</span>
+          </Link>
+        </li>
+      </ul>
     </header>
   )
 }
