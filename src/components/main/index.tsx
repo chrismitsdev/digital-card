@@ -1,3 +1,4 @@
+import {ArrowRightIcon} from 'lucide-react'
 import {Business} from './business'
 import {Intro} from './intro'
 
@@ -17,18 +18,26 @@ function Main() {
         facebookHref='https://www.facebook.com/profile.php?id=61566665200042'
         instagramHref='https://www.instagram.com/moccaliving.premiumstay/?hl=en'
         locationHref='https://maps.app.goo.gl/3Ccjojo3LUXRwucu8'
-        stayHref='https://www.hotelo.gr/en/properties/mocca-living-41'
-      />
+      >
+        <BookStayLink href='https://www.hotelo.gr/en/properties/mocca-living-41'>
+          <span>Book your stay</span>
+          <ArrowRightIcon className='size-4' />
+        </BookStayLink>
+      </Business>
       <Business
         imageSrc='/mocca-living.png'
         title='Mocca City'
-        description='Premium city appartment, Alexandroupoli Center'
+        description='Premium city apartment, Alexandroupoli Center'
         websiteHref='https://www.moccaliving.com/en/accommodation/mocca-city/city-dimitra'
         facebookHref='https://www.facebook.com/profile.php?id=61566665200042'
         instagramHref='https://www.instagram.com/moccaliving.premiumstay/?hl=en'
         locationHref='https://maps.app.goo.gl/pLsA8svYzYq5Z9GK9'
-        stayHref='https://www.hotelo.gr/en/properties/mocca-living-41'
-      />
+      >
+        <BookStayLink href='https://www.hotelo.gr/en/properties/mocca-living-41'>
+          <span>Book your stay</span>
+          <ArrowRightIcon className='size-4' />
+        </BookStayLink>
+      </Business>
       <Business
         imageSrc='/yuppii.png'
         title='Yuppii Luna Park'
@@ -48,15 +57,31 @@ function Main() {
         locationHref='https://maps.app.goo.gl/qUaToewiDSyoCUm57'
       />
       <Business
-        imageSrc='/start-pilates.jpg'
+        imageSrc='/start-pilates.png'
         title='Start Pilates'
         description='Premium pilates equipment & accessories'
         websiteHref='https://www.startpilates.gr/'
         facebookHref='https://www.facebook.com/startpilates.gr'
         instagramHref='https://www.instagram.com/startpilates.gr/'
-        locationHref='https://maps.app.goo.gl/qUaToewiDSyoCUm57'
+        locationHref='https://maps.app.goo.gl/ojHo7RfqvHksnUPYA'
       />
     </main>
+  )
+}
+
+function BookStayLink({
+  href,
+  children
+}: React.PropsWithChildren<{href: string}>) {
+  return (
+    <a
+      className='px-3 block-8 min-inline-41 flex justify-center items-center gap-1.5 text-sm rounded-full bg-primary text-primary-foreground active:scale-95 hover:bg-primary/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-primary/80 focus-visible:outline-primary sm:px-4 sm:block-10 sm:min-inline-auto sm:text-base sm:ms-auto'
+      href={href}
+      target='_blank'
+      rel='noopener noreferrer'
+    >
+      {children}
+    </a>
   )
 }
 
