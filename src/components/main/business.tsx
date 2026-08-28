@@ -24,9 +24,9 @@ function Business({
   children
 }: BusinessProps) {
   return (
-    <div className='p-2 grid grid-cols-[auto_1fr] gap-2 bg-accent/10 rounded shadow'>
+    <div className='p-2 grid grid-cols-[auto_1fr] gap-2 bg-accent/10 rounded shadow sm:gap-y-0'>
       <img
-        className='self-center max-inline-20 sm:max-inline-24'
+        className='max-inline-20 sm:max-inline-24'
         src={imageSrc}
         alt={`${title} logo`}
       />
@@ -38,45 +38,45 @@ function Business({
           {title}
         </Text>
         <Text>{description}</Text>
-        <div className='pt-1.5 flex flex-wrap gap-3 sm:pt-3'>
-          {websiteHref && (
-            <IconLink
-              aria-label='Go to website (opens in new tab)'
-              href={websiteHref}
-              target='_blank'
-            >
-              <GlobeIcon />
-            </IconLink>
-          )}
-          {facebookHref && (
-            <IconLink
-              aria-label='Go to Facebook page (opens in new tab)'
-              href={facebookHref}
-              target='_blank'
-            >
-              <SiFacebook />
-            </IconLink>
-          )}
-          {instagramHref && (
-            <IconLink
-              aria-label='Go to Instagram page (opens in new tab)'
-              href={instagramHref}
-              target='_blank'
-            >
-              <SiInstagram />
-            </IconLink>
-          )}
-          {locationHref && (
-            <IconLink
-              aria-label='Go to location in Google Maps (opens in new tab)'
-              href={locationHref}
-              target='_blank'
-            >
-              <MapPinIcon />
-            </IconLink>
-          )}
-          {children}
-        </div>
+      </div>
+      <div className='col-span-full pt-1 flex justify-end gap-3 sm:pt-0'>
+        {websiteHref && (
+          <IconLink
+            aria-label='Go to website (opens in new tab)'
+            href={websiteHref}
+            target='_blank'
+          >
+            <GlobeIcon />
+          </IconLink>
+        )}
+        {facebookHref && (
+          <IconLink
+            aria-label='Go to Facebook page (opens in new tab)'
+            href={facebookHref}
+            target='_blank'
+          >
+            <SiFacebook />
+          </IconLink>
+        )}
+        {instagramHref && (
+          <IconLink
+            aria-label='Go to Instagram page (opens in new tab)'
+            href={instagramHref}
+            target='_blank'
+          >
+            <SiInstagram />
+          </IconLink>
+        )}
+        {locationHref && (
+          <IconLink
+            aria-label='Go to location in Google Maps (opens in new tab)'
+            href={locationHref}
+            target='_blank'
+          >
+            <MapPinIcon />
+          </IconLink>
+        )}
+        {children}
       </div>
     </div>
   )
