@@ -75,7 +75,7 @@ function BookStayLink({
 }: React.PropsWithChildren<{href: string}>) {
   return (
     <a
-      className='px-3 block-8 flex justify-center items-center gap-1.5 text-sm rounded-full bg-primary text-primary-foreground active:scale-95 hover:bg-primary/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-primary/80 focus-visible:outline-primary sm:px-4 sm:block-10 sm:text-base'
+      className='px-3 block-8 grow flex justify-center items-center gap-1.5 text-sm rounded-full bg-primary text-primary-foreground active:scale-95 hover:bg-primary/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-primary/80 focus-visible:outline-primary sm:px-4 sm:block-10 sm:grow-0 sm:text-base'
       href={href}
       target='_blank'
       rel='noopener noreferrer'

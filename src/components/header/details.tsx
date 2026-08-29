@@ -15,7 +15,7 @@ function Details({fullName, title, phone, email, location}: DetailsProps) {
       <div className='space-y-1 sm:space-y-2'>
         <Text
           variant='heading'
-          type='display'
+          family='display'
           as='h1'
         >
           {fullName}

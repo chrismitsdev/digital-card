@@ -20,7 +20,7 @@ function Intro({supertitle, heading, subtitle}: IntroProps) {
         <Text
           className='whitespace-nowrap'
           variant='heading'
-          type='display'
+          family='display'
           as='h2'
         >
           {heading}

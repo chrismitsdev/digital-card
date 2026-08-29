@@ -3,7 +3,7 @@ import {cn} from '@/src/lib/utils'
 type TextProps = React.PropsWithChildren<{
   className?: string
   'aria-hidden'?: boolean | 'true' | 'false'
-  type?: 'sans' | 'display' | 'script'
+  family?: 'sans' | 'display'
   variant?: 'heading' | 'title' | 'paragraph' | 'small'
   color?: 'primary' | 'accent'
   as?: 'h1' | 'h2' | 'h3' | 'p' | 'span' | 'small'
@@ -12,7 +12,7 @@ type TextProps = React.PropsWithChildren<{
 export default function Text({
   className,
   'aria-hidden': ariaHidden,
-  type = 'sans',
+  family = 'sans',
   variant = 'paragraph',
   color,
   as: Comp = 'span',
@@ -23,10 +23,9 @@ export default function Text({
       aria-hidden={ariaHidden}
       className={cn(
         'block',
-        // Type
-        type === 'sans' && 'font-sans',
-        type === 'display' && 'font-display',
-        type === 'script' && 'font-script',
+        // Family
+        family === 'sans' && 'font-sans',
+        family === 'display' && 'font-display',
         // Variant
         variant === 'heading' && [
           'text-2xl',
