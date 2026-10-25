@@ -14,7 +14,7 @@ function Main() {
         imageSrc='/mocca-living.png'
         title='Mocca Living'
         description='Luxury villas by the sea, Agia Paraskevi Alexandroupoli'
-        websiteHref='https://www.moccaliving.com/en/accommodation/mocca-sea/sea-dimitra'
+        websiteHref='https://www.moccaliving.com/en/accommodation/mocca-by-the-sea-dimitra'
         facebookHref='https://www.facebook.com/profile.php?id=61566665200042'
         instagramHref='https://www.instagram.com/moccaliving.premiumstay/?hl=en'
         locationHref='https://maps.app.goo.gl/3Ccjojo3LUXRwucu8'
@@ -28,12 +28,12 @@ function Main() {
         imageSrc='/mocca-living.png'
         title='Mocca City'
         description='Premium city apartment, Alexandroupoli Center'
-        websiteHref='https://www.moccaliving.com/en/accommodation/mocca-city/city-dimitra'
+        websiteHref='https://www.moccaliving.com/en/accommodation/mocca-city'
         facebookHref='https://www.facebook.com/profile.php?id=61566665200042'
         instagramHref='https://www.instagram.com/moccaliving.premiumstay/?hl=en'
         locationHref='https://maps.app.goo.gl/pLsA8svYzYq5Z9GK9'
       >
-        <BookStayLink href='https://www.hotelo.gr/en/properties/mocca-living-41'>
+        <BookStayLink href='https://www.hotelo.gr/en/properties/mocca-city-51'>
           <span>Book your stay</span>
           <ArrowRightIcon className='size-4' />
         </BookStayLink>
